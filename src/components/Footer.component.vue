@@ -1,0 +1,14 @@
+
+
+<template>
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-1 mb-1">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Accueil</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Réserver</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2023, Blanchiment</p>
+        </footer>
+    </div>
+</template>
