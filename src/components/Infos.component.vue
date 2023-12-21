@@ -2,8 +2,11 @@
 
 <template>
     <div class="container py-4">
-        <h1 class="text-center">Informations Pratiques</h1>
-        <div class="custom-border-bottom mx-auto mb-2"></div>
+        <div class="text-center mb-3 hover-effect">
+            <h1 class="text-center">Informations Pratiques</h1>
+            <div class="custom-border-bottom mx-auto mb-2"></div>
+        </div>
+
         <div class="row text-center">
             <div class="col-md-6">
                 <h2 class="my-4">Horaires</h2>
@@ -47,7 +50,5 @@ a {
     color: var(--text-color);
     text-decoration: none;
 }
-
-
 </style>
 

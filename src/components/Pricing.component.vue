@@ -5,9 +5,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-center mt-3">Nos Tarifs</h1>
-                    <div class="custom-border-bottom mx-auto mb-3"></div>
-                    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                    <div class="text-center mb-3 hover-effect">
+                        <h1 class="text-center mt-3">Nos Tarifs</h1>
+                        <div class="custom-border-bottom mx-auto mb-3"></div>
+                    </div>
+
+                    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse
+                        lectus tortor,
                         dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
                         ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie,
                         enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
@@ -102,7 +106,6 @@
 </template>
 
 <style scoped>
-
 .pricing-card {
     border: 1px solid var(--secondary-color);
     background-color: var(--secondary-color);
@@ -112,8 +115,12 @@
     transition: all 0.3s ease-in-out;
 }
 
+.pricing-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 .custom-border-bottom {
     width: 30%;
 }
-
 </style>

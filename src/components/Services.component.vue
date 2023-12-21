@@ -9,16 +9,17 @@ import GoodReasons from './small/GoodReasons.component.vue'
         <div class="py-5 my-5 services">
             <div class="d-flex justify-content-around align-items-center">
                 <div>
-                    <img src="../assets/s3.png.webp" alt="logo loupe sur dent">
-                    <p class="mt-1">Blanchiment Dentaire</p>
+                    <img src="../assets/s5.png.webp" alt="logo loupe sur dent">
+                    <p class="mt-1">Examination dentaire</p>
                 </div>
                 <div>
                     <img src="../assets/s2.png.webp" alt="logo loupe sur dent">
                     <p class="mt-1">Détection de pathologies</p>
                 </div>
+
                 <div>
-                    <img src="../assets/s5.png.webp" alt="logo loupe sur dent">
-                    <p class="mt-1">Examination dentaire</p>
+                    <img src="../assets/s3.png.webp" alt="logo loupe sur dent">
+                    <p class="mt-1">Blanchiment Dentaire</p>
                 </div>
             </div>
         </div>
@@ -61,11 +62,17 @@ import GoodReasons from './small/GoodReasons.component.vue'
 
 .services-small {
     background-color: var(--primary-color);
+    color: var(--background-color);
 }
 
-.custom-border-bottom {
-    width: 20%;
+img {
+    transition: all 0.3s ease-in-out;
 }
+
+img:hover {
+    transform: scale(1.2);
+}
+
 
 p {
     font-size: 25px;

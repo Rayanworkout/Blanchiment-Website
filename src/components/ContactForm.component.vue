@@ -3,8 +3,11 @@
 <template>
     <section>
         <div class="container py-5">
-            <h1 class="text-center">Contact</h1>
-            <div class="custom-border-bottom mx-auto mb-5"></div>
+            <div class="text-center mb-3 hover-effect">
+                <h1 class="text-center">Contact</h1>
+                <div class="custom-border-bottom mx-auto mb-5"></div>
+            </div>
+
             <div class="row">
                 <div class="col-md-6">
                     <img src="../assets/brosse-a-dent.jpg" alt="brosses à dents dans un pot">
@@ -54,6 +57,4 @@ input:focus {
     border: 2px solid var(--secondary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-
 </style>

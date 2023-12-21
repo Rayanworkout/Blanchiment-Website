@@ -15,17 +15,17 @@ const bookHover = ref(false);
         <div @mouseover="calendarHover = true" @mouseleave="calendarHover = false">
             <i
                 :class="{ 'bi bi-calendar-heart icon': !calendarHover, 'bi bi-calendar-heart-fill icon': calendarHover }"></i>
-            <p class="display-6"><strong>3</strong></p>
+            <p class="display-6"><strong><AnimatedCounter :value="3" :duration="4000" class="counter" /></strong></p>
             <p>ans d'expérience</p>
         </div>
         <div @mouseover="heartHover = true" @mouseleave="heartHover = false">
             <i :class="{ 'bi bi-heart icon': !heartHover, 'bi bi-heart-fill icon': heartHover }"></i>
-            <p class="display-6"><strong>2000</strong></p>
+            <p class="display-6"><strong><AnimatedCounter :value="500" :duration="4000" class="counter" /></strong></p>
             <p>Patients satisfaits</p>
         </div>
         <div @mouseover="bookHover = true" @mouseleave="bookHover = false">
             <i :class="{ 'bi bi-book icon': !bookHover, 'bi bi-book-fill icon': bookHover }"></i>
-            <p class="display-6"><strong>5</strong></p>
+            <p class="display-6"><strong><AnimatedCounter :value="5" :duration="3000" class="counter" /></strong></p>
             <p>Certificats Professionnels</p>
         </div>
     </div>
@@ -35,7 +35,10 @@ const bookHover = ref(false);
 <style scoped>
 .icon {
     font-size: 50px;
+}
 
+.counter:hover {
+    color: var(--primary-color);
 }
 
 p {

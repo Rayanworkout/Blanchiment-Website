@@ -65,7 +65,6 @@
 
     .elem {
         border-bottom: 2px solid transparent;
-        /* Initial transparent border */
         transition: border-color 0.5s ease-in-out;
     }
 

@@ -38,24 +38,6 @@
 </template>
 
 <style scoped>
-.hover-effect {
-    color: var(--primary-color);
-    transition: color 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.custom-border-bottom {
-    width: 40%;
-    transition: width 0.3s ease-in-out;
-}
-
-.hover-effect:hover .custom-border-bottom {
-    width: 100%;
-    transition: width 0.3s ease-in-out;
-}
-
-
-
 
 .about-pic {
     border-radius: 15px;
