@@ -10,8 +10,10 @@
                         <img src="../assets/center.jpg" alt="about" class="img-fluid about-pic">
                     </div>
                     <div class="col-md-6">
-                        <h1 class="text-center mt-3">Notre Centre</h1>
-                        <div class="custom-border-bottom mx-auto mb-3"></div>
+                        <div class="text-center mb-3 hover-effect">
+                            <h1 class="mt-3">Notre Centre</h1>
+                            <div class="custom-border-bottom mx-auto mb-3"></div>
+                        </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
                             tortor,
                             dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
@@ -31,14 +33,30 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
-        
     </section>
 </template>
 
 <style scoped>
+.hover-effect {
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.custom-border-bottom {
+    width: 40%;
+    transition: width 0.3s ease-in-out;
+}
+
+.hover-effect:hover .custom-border-bottom {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+
+
+
 .about-pic {
     border-radius: 15px;
 }
@@ -53,6 +71,13 @@
 .icon-text {
     display: flex;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.icon-text:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
@@ -63,4 +88,5 @@
     .custom-border-bottom {
         width: 100%;
     }
-}</style>
+}
+</style>

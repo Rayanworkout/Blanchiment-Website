@@ -15,10 +15,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto">
-                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                    <a class="nav-link" href="#">Notre Centre</a>
-                    <a class="nav-link" href="#">Services</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link elem active" aria-current="page" href="#">Accueil</a>
+                    <a class="nav-link elem" href="#">Notre Centre</a>
+                    <a class="nav-link elem" href="#">Services</a>
+                    <a class="nav-link elem" href="#">Contact</a>
                     <a class="nav-link btn nav-btn" href="#">Réserver</a>
                 </div>
             </div>
@@ -34,11 +34,9 @@
     font-size: small;
 }
 
-.nav-link {
+.nav-link elem {
     font-size: larger;
 }
-
-
 
 .nav-btn {
     background-color: var(--primary-color);
@@ -46,6 +44,13 @@
     color: white;
     padding: 10px;
     margin-left: 30px;
+}
+
+.nav-btn:hover {
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: none;
+    color: var(--primary-color);
 }
 
 /* Starting from 1000px */
@@ -58,7 +63,13 @@
         margin-left: 50px;
     }
 
-    .nav-link:hover {
+    .elem {
+        border-bottom: 2px solid transparent;
+        /* Initial transparent border */
+        transition: border-color 0.5s ease-in-out;
+    }
+
+    .elem:hover {
         color: var(--primary-color);
         border-bottom: 2px solid var(--primary-color);
     }

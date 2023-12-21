@@ -16,7 +16,8 @@
             <div class="col-md-6">
                 <h2 class="my-4">Coordonnées</h2>
                 <ul>
-                    <li><span><i class="bi bi-geo-alt icon"></i></span> 1 rue de la Paix, 75000 Paris</li>
+                    <li><a href="https://maps.app.goo.gl/vuQX2zN4fDbHBVK68" target="_blank"><span><i
+                                    class="bi bi-geo-alt icon"></i></span> 1 rue de la Paix, 75000 Paris</a></li>
                     <li><span><i class="bi bi-telephone icon"></i></span> 01 23 45 67 89</li>
                     <li><span><i class="bi bi-envelope-at icon"></i></span> email@example.com </li>
                 </ul>
@@ -41,4 +42,12 @@ li {
     list-style: none;
     margin-bottom: 10px;
 }
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
 </style>
+

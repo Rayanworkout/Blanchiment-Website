@@ -2,9 +2,10 @@
 <template>
     <div class="elem-containers">
         <div class="d-flex justify-content-start p-3 px-5">
-            <a class="px-5" href="#"><i class="bi bi-geo-alt-fill icon"></i> 150 avenue de l'ogre blanc 13013
+            <a class="px-5" href="https://maps.app.goo.gl/vuQX2zN4fDbHBVK68" target="_blank"><i
+                    class="bi bi-geo-alt-fill icon"></i> 150 avenue de l'ogre blanc 13013
                 Marseille</a>
-            <a href="#"><i class="bi bi-envelope-at-fill icon"></i> email@email.fr</a>
+            <a href="mailto:email@examplecom"><i class="bi bi-envelope-at-fill icon"></i> email@email.fr</a>
         </div>
     </div>
 </template>
@@ -21,5 +22,4 @@ a {
         display: none;
     }
 }
-
 </style>

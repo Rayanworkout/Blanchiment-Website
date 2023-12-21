@@ -6,24 +6,42 @@ import GoodReasons from './small/GoodReasons.component.vue'
 <template>
     <section class="services-section py-5">
         <GoodReasons />
-        <div class="py-5 my-5">
-            <div class="d-flex justify-content-around align-items-center items">
-                <div class="elem">
+        <div class="py-5 my-5 services">
+            <div class="d-flex justify-content-around align-items-center">
+                <div>
                     <img src="../assets/s3.png.webp" alt="logo loupe sur dent">
                     <p class="mt-1">Blanchiment Dentaire</p>
                 </div>
-                <div class="elem">
+                <div>
                     <img src="../assets/s2.png.webp" alt="logo loupe sur dent">
                     <p class="mt-1">Détection de pathologies</p>
                 </div>
-                <div class="elem">
+                <div>
                     <img src="../assets/s5.png.webp" alt="logo loupe sur dent">
                     <p class="mt-1">Examination dentaire</p>
                 </div>
             </div>
-            <div style="height: 1000px;"></div>
         </div>
+    </section>
 
+    <section class="services-small">
+        <div>
+            <div class="d-flex justify-content-around align-items-center flex-column py-4">
+                <div class="text-center">
+                    <img src="../assets/s5.png.webp" alt="logo loupe sur dent">
+                    <p class="mt-1">Examination dentaire</p>
+                </div>
+                <div class="text-center">
+                    <img src="../assets/s2.png.webp" alt="logo loupe sur dent">
+                    <p class="mt-1">Détection de pathologies</p>
+                </div>
+                <div class="text-center">
+                    <img src="../assets/s3.png.webp" alt="logo loupe sur dent">
+                    <p class="mt-1">Blanchiment Dentaire</p>
+                </div>
+
+            </div>
+        </div>
     </section>
 </template>
 
@@ -38,11 +56,19 @@ import GoodReasons from './small/GoodReasons.component.vue'
     padding: 200px 0;
     color: #fff;
     width: 100%;
-    height: 600px;
+    min-height: 750px;
+}
+
+.services-small {
+    background-color: var(--primary-color);
 }
 
 .custom-border-bottom {
     width: 20%;
+}
+
+p {
+    font-size: 25px;
 }
 
 h1 {
@@ -50,12 +76,14 @@ h1 {
 }
 
 @media (max-width: 750px) {
-    .items {
-        flex-direction: column;
-    }
-    .elem {
-        text-align: center;
+    .services {
+        display: none;
     }
 }
 
+@media (min-width: 750px) {
+    .services-small {
+        display: none;
+    }
+}
 </style>

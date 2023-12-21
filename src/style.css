@@ -30,11 +30,25 @@ body {
     padding: 10px;
 }
 
+.cta:hover {
+    background-color: var(--background-color);
+    border: none;
+    box-shadow: none;
+    color: var(--primary-color);
+}
+
 .secondary-btn {
     background-color: var(--secondary-color);
     border-radius: 7px;
     color: var(--text-color);
     padding: 10px;
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-color);
+    border: none;
+    box-shadow: none;
+    color: var(--backgound-color);
 }
 
 
